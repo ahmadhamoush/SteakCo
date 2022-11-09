@@ -123,6 +123,7 @@ button {
 
 .btns button[name='book'] {
   background-color: #FFFFFF;
+  color:black;
 }
 
 .btns button[name='menu'] {

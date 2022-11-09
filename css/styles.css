@@ -478,7 +478,6 @@ margin: 20px 0;
   transform: scale(2.5);
   margin: 13px 0px;
   transition: 0.5s ease-in-out;
-  color:black;
 }
 
 .link h3 {
@@ -492,6 +491,7 @@ margin: 20px 0;
   font-weight: 200;
   font-size: 20px;
   transition: 0.5s ease-in-out;
+  color:black;
 }
 
 .link:hover>i {

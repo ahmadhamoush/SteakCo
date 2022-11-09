@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/login.css">
+  <title></title>
+</head>
+
+<body>
+  <nav>
+    <h1>STEAK CO.</h1>
+    <input onclick="changeIcon()" type="checkbox" class="check" id='check'>
+    <label for="check" class="nav-btn">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <ul>
+      <a href="index.html">
+        <li>HOME</li>
+      </a>
+      <li>ABOUT</li>
+      <a href="menu.html">
+        <li>MENU</li>
+      </a>
+      <a href="login.html">
+        <li>LOGIN</li>
+      </a>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="left">
+      <h1>LOGIN TO YOUR ACCOUNT</h1>
+      <form class="" action="index.html" method="post">
+        <input required type="text" class="username" placeholder="Username">
+        <input required type="password" class='password' placeholder="Password">
+        <button type="button" onclick="loginValidation()" name="login">LOGIN</button>
+      </form>
+      <div class="bottom">
+        <span>Don't Have An Account?</span>
+        <a href="signup.html"><span><b>Sign Up Right Now!</b></span></a>
+      </div>
+    </div>
+    <div class="right">
+      <h1>New Here?</h1>
+      <p>Sign up and discover the best meals available worldwide</p>
+      <button onclick="navSignup()" type="button" name="sign-up">SIGN UP</button>
+    </div>
+  </div>
+</body>
+<script src="../scripts/routing.js" charset="utf-8"></script>
+<script src="../scripts/login.js" charset="utf-8"></script>
+
+</html>

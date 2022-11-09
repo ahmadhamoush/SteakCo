@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title></title>
+</head>
+
+<body>
+  <dialog class="menu-modal"></dialog>
+  <nav>
+    <h1>STEAK CO.</h1>
+    <input onclick="changeIcon()" type="checkbox" id='check'>
+    <label for="check" class="nav-btn ">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <ul>
+      <a href="index.html">
+        <li>HOME</li>
+      </a>
+      <a href="#about">
+        <li>ABOUT</li>
+      </a>
+      <a href="#">
+        <li>MENU</li>
+      </a>
+      <a href="login.html">
+        <li>LOGIN</li>
+      </a>
+      <div class="cartIcon">
+        <i onclick="openCart()" class="fa-solid fa-cart-shopping cart1"></i>
+        <i class="fa-solid fa-circle circle1"></i>
+        <span class='cart-num cart-home cartNum'></span>
+      </div>
+    </ul>
+  </nav>
+  <dialog class="cart-modal"></dialog>
+  <div class="container">
+    <div class="icons">
+      <div class="menu-option">
+        <img onclick="handleMenuClick(event)" name='Steak' src="../images/icons/meat.png" alt="">
+        <span>Steak</span>
+      </div>
+      <div class="menu-option">
+        <img onclick="handleMenuClick(event)" name='Salads' src="../images/icons/salad.png" alt="">
+        <span>Salads</span>
+      </div>
+      <div class="menu-option">
+        <img onclick="handleMenuClick(event)" name='Soups' src="../images/icons/soup.png" alt="">
+        <span>Soups</span>
+      </div>
+      <div class="menu-option">
+        <img onclick="handleMenuClick(event)" name='Drinks' src="../images/icons/drink.png" alt="">
+        <span>Drinks</span>
+      </div>
+    </div>
+    <h3></h3>
+    <div class="menu">
+      <p></p>
+    </div>
+  </div>
+</body>
+<script src="../scripts/menu.js" charset="utf-8"></script>
+<script src="../scripts/menu-data.js" charset="utf-8"></script>
+
+</html>

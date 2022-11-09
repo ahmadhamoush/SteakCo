@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/admin.css">
+  <title></title>
+</head>
+
+<body>
+  <nav class="verticalNav">
+    <input onclick="check()" type="checkbox" class="check" id='check'>
+    <label for="check" class="nav-btn">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <ul>
+      <h1>STEAK CO.</h1>
+      <div class="ul-container">
+        <li onclick="showDashboard(event)">DASHBOARD</li>
+        <li onclick="showCustomers(event)">CUSTOMERS</li>
+        <li onclick="showStaff(event)">STAFF</li>
+        <li onclick="showMenu(event)">MENU</li>
+        <li>ORDERS</li>
+        <li>TABLES</li>
+        <li onclick="window.location.href='index.html'">LOGOUT</li>
+      </div>
+    </ul>
+  </nav>
+  <nav class="horizontalNav">
+    <ul>
+      <li>Welcome, Admin</li>
+    </ul>
+  </nav>
+
+  <div class="container">
+  </div>
+  <div class="cards">
+    <div class="card">
+      <div class="">
+        <h2>Customers</h2>
+        <span>286</span>
+      </div>
+      <div class="">
+        <h2>This Month</h2>
+        <span>57</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="">
+        <h2>Staff</h2>
+        <span>18</span>
+      </div>
+      <div class="">
+        <h2>Chefs</h2>
+        <span>6</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="">
+        <h2>Menu Items</h2>
+        <span>32</span>
+      </div>
+      <div class="">
+        <h2>Added this Month</h2>
+        <span>6</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="">
+        <h2>Orders</h2>
+        <span>492</span>
+      </div>
+      <div class="">
+        <h2>Total Gross</h2>
+        <span>$12,740</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="">
+        <h2>Tables Available</h2>
+        <span>10 </span>
+      </div>
+      <div class="">
+        <h2>Tables Booked</h2>
+        <span>20 Booked</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="">
+        <h2>Number Of Reviews</h2>
+        <span>73</span>
+      </div>
+      <div class="">
+        <h2>This Month</h2>
+        <span>24</span>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../scripts/menu-data.js" charset="utf-8"></script>
+<script src="../scripts/users.js" charset="utf-8"></script>
+<script src="../scripts/admin.js" charset="utf-8"></script>
+
+</html>

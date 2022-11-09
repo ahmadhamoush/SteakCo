@@ -7,9 +7,9 @@ function navLogin() {
 }
 
 function bookNav() {
-  window.location.href = 'book.html';
+  window.location.href = 'pages/book.html';
 }
 
 function menuNav() {
-  window.location.href = 'menu.html';
+  window.location.href = 'pages/menu.html';
 }

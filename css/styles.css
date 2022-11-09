@@ -401,6 +401,7 @@ button {
 footer {
   display: flex;
   margin: 50px;
+  margin-bottom:0;
   padding: 25px;
 }
 
@@ -430,20 +431,20 @@ footer {
 
 .contact textarea, .contact input {
   font-size: 20px;
-  flex: 40%;
-  width: 95%;
+  width: 100%;
   border: 1px solid #a9a9a9;
   padding: 10px;
   outline: none;
   resize: none;
-  margin: 20px;
+margin: 20px 0;
 }
 
 .contact button {
   background-color: #322E2E;
   color: white;
   border-radius: 5px;
-  width: 100%;
+
+  padding: 20px;
 }
 
 .links {
@@ -554,6 +555,19 @@ footer {
   .btns button {
     width: 100%;
     padding: 15px 65px;
+  }
+  .contact h2{
+    font-size: 40px;
+  }
+  .contact span{
+    text-align: center;
+  }
+  .why-us-body{
+    width: 100%;
+    line-height: 1.6;
+  }
+  .book{
+  line-height: 2;
   }
 }
 

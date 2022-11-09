@@ -22,10 +22,14 @@ document.addEventListener('scroll', function() {
   var top = window.pageYOffset + window.innerHeight;
   var isVisible = top > document.querySelector('.review-container').offsetTop;
   if (isVisible) {
-    document.querySelector('.review-container').classList.add('review-active');
+    document.querySelectorAll('.review-container').forEach(item=>{
+      item.classList.add('review-active');
+    })
 
   } else {
-    document.querySelector('.review-container').classList.remove('review-active');
+    document.querySelectorAll('.review-container').forEach(item=>{
+      item.classList.remove('review-active');
+    })
   }
 });
 

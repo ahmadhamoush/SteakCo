@@ -561,7 +561,8 @@ margin: 20px 0;
     padding: 15px 65px;
   }
   .contact h2{
-    font-size: 40px;
+    font-size: 30px;
+    text-align: center;
   }
   .contact span{
     text-align: center;
@@ -662,11 +663,25 @@ margin: 20px 0;
 }
 
 @media (max-width: 570px) {
-  .view-menu h1 {
-    font-size: 40px;
+  .reviews{
+    padding: 10px;
   }
-
+  .reviews-title{
+    margin-bottom: 10px;
+  }
+  .review-container{
+    margin: 30px 0;
+  }
+  .view-menu h1 {
+    font-size: 35px;
+  }
+  .view-menu{
+    background-position: right;
+  }
   .view-menu span {
     width: 100vw;
+    margin: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px 0 #E99A61;
   }
 }

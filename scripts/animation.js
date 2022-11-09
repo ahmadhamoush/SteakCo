@@ -47,8 +47,10 @@ function animateForEach(itemToAnimate, classToAdd){
       var isVisible = top > item.offsetTop;
       if (isVisible) {
          item.classList.add(classToAdd);
+         item.style.opacity = '1';
       } else {
            item.classList.remove(classToAdd);
+           item.style.opacity = '0';
       }
   });
   });

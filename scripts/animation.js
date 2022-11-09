@@ -20,7 +20,7 @@ document.addEventListener('scroll', function() {
 
 document.addEventListener('scroll', function() {
   var top = window.pageYOffset + window.innerHeight;
-  var isVisible = top > document.getElementById('review').offsetTop;
+  var isVisible = top > document.querySelector('.review-container').offsetTop;
   if (isVisible) {
     document.querySelector('.review-container').classList.add('review-active');
 

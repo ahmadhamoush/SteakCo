@@ -766,6 +766,7 @@ margin: 20px 0;
 }
 .transform2 {
     animation: transform2 1.5s ease-in;
+        animation-fill-mode: forwards;
 }
 .changeBg {
     animation: changeBg 1.5s ease-in;

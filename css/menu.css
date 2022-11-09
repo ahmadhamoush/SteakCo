@@ -304,7 +304,7 @@ dialog .cart {
   text-align: center;
   justify-content: space-between;
   align-items: center;
-  margin: 20px;
+  width:50%;
   transition: 0.5s ease-in-out;
 }
 
@@ -316,7 +316,7 @@ dialog .cart {
 }
 
 .cart-item div {
-  margin: 10px;
+  margin: 7px 5px;
 }
 
 .cart-modal {

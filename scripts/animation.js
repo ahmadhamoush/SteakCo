@@ -35,8 +35,10 @@ function animate(item,classToAdd){
     var isVisible = top > document.querySelector(item).offsetTop;
     if (isVisible) {
           document.querySelector(item).classList.add(classToAdd);
+          item.style.opacity = '1';
     } else {
         document.querySelector(item).classList.remove(classToAdd);
+        item.style.opacity = '0';
     }
   });
 }
@@ -62,7 +64,7 @@ function animateMultiple(view, items,classes){
     var isVisible = top > document.querySelector(view).offsetTop;
     if (isVisible) {
         document.querySelector(items[0]).classList.add(classes[0]);
-          document.querySelector(items[1]).classList.add(classes[1]);
+        document.querySelector(items[1]).classList.add(classes[1]);
     } else {
         document.querySelector(items[0]).classList.remove(classes[0]);
         document.querySelector(items[1]).classList.remove(classes[1]);

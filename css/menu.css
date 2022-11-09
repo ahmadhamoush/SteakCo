@@ -464,4 +464,7 @@ dialog .cart {
     font-size: 40px;
     z-index: 1;
   }
+  .menu-option{
+    width:25%;
+  }
 }

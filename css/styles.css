@@ -300,6 +300,10 @@ button {
   box-shadow: 0 0 10px #a9a9a9;
   transform: translateY(-10px);
 }
+.review-active{
+  box-shadow: 0 0 10px #a9a9a9;
+  transform: translateY(-10px);
+}
 
 .write-review {
   display: flex;

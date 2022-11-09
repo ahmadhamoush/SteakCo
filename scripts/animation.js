@@ -18,6 +18,17 @@ document.addEventListener('scroll', function() {
   }
 });
 
+document.addEventListener('scroll', function() {
+  var top = window.pageYOffset + window.innerHeight;
+  var isVisible = top > document.getElementById('review').offsetTop;
+  if (isVisible) {
+    document.querySelector('.review-container').classList.add('review-active');
+
+  } else {
+    document.querySelector('.review-container').classList.remove('review-active');
+  }
+});
+
 function changeIcon() {
   if (document.getElementById('check').checked == true) {
     document.querySelector('label i').classList.remove('fa-bars');

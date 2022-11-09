@@ -677,18 +677,16 @@ margin: 20px 0;
     font-size: 35px;
   }
   .view-menu{
-  border-bottom-left-radius: 50%;
-    border-top-right-radius: 50%;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/img4.jpg');
+  background-position: bottom;
   }
   .book{
-    border-top-left-radius: 50%;
-      border-bottom-right-radius: 50%;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
   }
   .view-menu span {
     width: 100vw;
     margin: 10px;
     margin-bottom: 20px;
-    box-shadow: 0 0 10px 0 #E99A61;
   }
 }

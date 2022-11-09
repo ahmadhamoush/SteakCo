@@ -31,6 +31,17 @@ document.addEventListener('scroll', function() {
 
 });
 
+document.addEventListener('scroll', function() {
+  var top = window.pageYOffset + window.innerHeight;
+  var isVisible = top > document.querySelector('.why-us-body').offsetTop;
+  if (isVisible) {
+    document.querySelector('.img-container').classList.add('img-active');
+  } else {
+      document.querySelector('.img-container').classList.remove('img-active');
+  }
+
+});
+
 function changeIcon() {
   if (document.getElementById('check').checked == true) {
     document.querySelector('label i').classList.remove('fa-bars');

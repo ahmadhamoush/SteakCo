@@ -57,5 +57,21 @@
 </body>
 <script src="../scripts/routing.js" charset="utf-8"></script>
 <script src="../scripts/animation.js" charset="utf-8"></script>
-
+<script type="text/javascript">
+function changeIcon() {
+  if (document.getElementById('check').checked == true) {
+    document.querySelector('label i').classList.remove('fa-bars');
+    document.querySelector('label i').classList.add('fa-x');
+    document.querySelector('label i').style.color = '#FFFFFF';
+    document.querySelector('nav h1').style.color = '#FFFFFF';
+    document.querySelector('body').style.overflow = 'hidden';
+  } else {
+    document.querySelector('label i').classList.add('fa-bars');
+    document.querySelector('label i').classList.remove('fa-x');
+    document.querySelector('nav h1').style.color = '#1A5151';
+    document.querySelector('label i').style.color = '#1A5151';
+    document.querySelector('body').style.overflow = 'visible';
+  }
+}
+</script>
 </html>

@@ -19,18 +19,16 @@ document.addEventListener('scroll', function() {
 });
 
 document.addEventListener('scroll', function() {
-  var top = window.pageYOffset + window.innerHeight;
-  var isVisible = top > document.querySelector('.review-container').offsetTop;
-  if (isVisible) {
-    document.querySelectorAll('.review-container').forEach(item=>{
-      item.classList.add('review-active');
-    })
+   document.querySelectorAll('.review-container').forEach(item=>{
+     var top = window.pageYOffset + window.innerHeight;
+       var isVisible = top > item.offsetTop;
+       if (isVisible) {
+          item.classList.add('review-active');
+       } else {
+            item.classList.remove('review-active');
+       }
+   })
 
-  } else {
-    document.querySelectorAll('.review-container').forEach(item=>{
-      item.classList.remove('review-active');
-    })
-  }
 });
 
 function changeIcon() {

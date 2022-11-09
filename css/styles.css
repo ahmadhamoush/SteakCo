@@ -159,6 +159,7 @@ button {
 }
 
 .img-container {
+  transform: scale(0);
   border-radius: 50%;
   display: inline-block;
   width: 512px;
@@ -173,11 +174,9 @@ button {
 
 .img-container:hover {
   box-shadow: 0px 0px 10px 5px #E99A61;
-  transform: scale(1.01);
 }
 .img-active{
-  box-shadow: 0px 0px 10px 5px #E99A61;
-  transform: scale(1.01);
+
 }
 
 .why-us-body {
@@ -633,7 +632,6 @@ margin: 20px 0;
   }
 
   .img-container:hover {
-    transform: scale(0.8);
     margin: 0;
   }
 
@@ -692,4 +690,82 @@ margin: 20px 0;
     margin: 10px;
     margin-bottom: 20px;
   }
+}
+
+/* Animations */
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        display: block;
+    }
+}
+
+@keyframes transform {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes transform2 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(0.7);
+    }
+}
+@keyframes changeBg {
+    0% {
+        background: #FFFFFF;
+    }
+    100% {
+        background-color: #eee;
+    }
+}
+
+.slideRight {
+    animation: slideInFromRight 2s ease-in;
+}
+
+.slideLeft {
+    animation: slideInFromLeft 2s ease-in;
+}
+
+.fade {
+    animation: fade 2.5s ease-in;
+}
+
+.transform {
+    animation: transform 1.5s ease-in;
+}
+.transform2 {
+    animation: transform2 1.5s ease-in;
+}
+.changeBg {
+    animation: changeBg 1.5s ease-in;
+    animation-fill-mode: forwards;
 }

@@ -35,10 +35,10 @@ function animate(item,classToAdd){
     var isVisible = top > document.querySelector(item).offsetTop;
     if (isVisible) {
           document.querySelector(item).classList.add(classToAdd);
-          item.style.opacity = '1';
+          document.querySelector(item).style.opacity = '1';
     } else {
         document.querySelector(item).classList.remove(classToAdd);
-        item.style.opacity = '0';
+        document.querySelector(item).style.opacity = '0';
     }
   });
 }

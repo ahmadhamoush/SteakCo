@@ -65,9 +65,11 @@ function animateMultiple(view, items,classes){
     if (isVisible) {
         document.querySelector(items[0]).classList.add(classes[0]);
         document.querySelector(items[1]).classList.add(classes[1]);
+        items.forEach(item=>{document.querySelector(item).style.opacity='1'});
     } else {
         document.querySelector(items[0]).classList.remove(classes[0]);
         document.querySelector(items[1]).classList.remove(classes[1]);
+        items.forEach(item=>{document.querySelector(item).style.opacity='0'});
     }
   });
 }

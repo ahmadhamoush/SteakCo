@@ -661,6 +661,9 @@ margin: 20px 0;
   .book span {
     width: 80vw;
   }
+  .book h1{
+    font-size: 35px;
+  }
 }
 
 @media (max-width: 570px) {
